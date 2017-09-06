@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<link rel="icon" href="calc.png" type="image/png"/>
+<style>
+h2,p{
+font-size:48px;
+color:Orange;
+}
+h2:hover{
+color:black;
+}
+body{
+background-size:100%;
+background-repeat:no-repeat;
+}
+</style>
+<body background="bb.jpg">
+<center><h2>CGPA Calculator</h2>
+<p>Your Cgpa is...</p>
+<p id="calc"></p></center>
+<script>
+var a =prompt("Enter the NCT Credit points...");
+b =prompt("Enter the OOPS Credit points...");
+c =prompt("Enter the Software Engg. Credit points...");
+d =prompt("Enter the Computer Architecture Credit points...");
+e =prompt("Enter the MM Credit points...");
+f =prompt("Enter the Data Structure Credit points...");
+g =prompt("Enter the OOPS Lab Credit points...");
+h =prompt("Enter the MM Lab Credit points...");
+i =prompt("Enter the Data Structure Lab Credit points...");
+s=4*Number(a)+3*Number(b)+3*Number(c)+3*Number(d)+3*Number(e)+3*Number(f)+2*Number(g)+2*Number(h)+2*Number(i);
+r=Number(s)/25
+document.getElementById("calc").innerHTML =r;
+</script>
+</body>
+</html>
